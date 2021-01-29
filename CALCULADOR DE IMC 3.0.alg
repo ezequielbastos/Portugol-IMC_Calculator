@@ -8,7 +8,11 @@ algoritmo "CalculadordeIMC"
 var
     N : Caractere
     M, A, IMC: Real
+    Opc: Caractere
 inicio
+      Opc <- "S"
+      Repita
+      limpatela
 Timer (300)
       EscrevaL ("                                              Developer: <Zack_Bastos>")
       Escreval ("                             ")
@@ -64,4 +68,7 @@ Timer (500)
               Fimse
          Fimse
       Fimse
+      Escreval("Digite (S)Sair ou (R)Repetir")
+      leia(opc)
+      até (opc = "S")
 fimalgoritmo
